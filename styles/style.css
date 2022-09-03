@@ -10,6 +10,8 @@
   color: #000;
 }
 
+/* Шапка страницы */
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -71,7 +73,6 @@
   z-index: 2;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -82,12 +83,20 @@
   z-index: 1;
 }
 
+/* Контент */
+
 .content {
 
 }
 
-.description {
+/* Контент → Секция description */
 
+.description {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  display: flex;
+  align-items: center;
 }
 
 .two-columns {
@@ -127,12 +136,28 @@
   font-weight: 600;
 }
 
+/* Контент → Секция digits */
+
+.section-title {
+
+}
+
+.section-title_place_digits {
+  margin: 0 auto 20px auto;
+  width: 60%;
+  border: 1px solid red;
+}
+
+
+
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  border: 1px solid red;
 }
 
 .footer {
