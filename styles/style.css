@@ -21,6 +21,7 @@
   background-color: #f2f2f2;
   margin-bottom: 100px;
   position: relative;
+  overflow: hidden;
 }
 
 .logo {
@@ -36,16 +37,16 @@
 }
 
 .header__title {
+  margin: 0 0 0 64px;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  margin-left: 64px;
-  /* по правилам верстки здесь должен быть (?) padding-left, но в Брифе нарисован внешний отступ */
   z-index: 4;
 }
 
 .header__subtitle {
+  margin: 0;
   width: 388px;
   line-height: 25px;
   font-size: 18px;
@@ -65,7 +66,7 @@
   text-decoration: underline;
 }
 
-.main-illustration {
+.header__main-illustration {
   width: 765px;
   height: 608px;
   position: absolute;
@@ -143,6 +144,7 @@
 .section-title {
   margin: 0 0 20px 0;
   text-align: center;
+  z-index: 1;
 }
 
 .section-title_theme_white {
@@ -155,6 +157,7 @@
 .section-subtitle {
   margin: 0;
   text-align: center;
+  z-index: 1;
 }
 
 .section-subtitle_theme_white {
@@ -211,12 +214,14 @@
   background-position: left bottom;
   background-size: 867px 637px;
   background-color: #f2f2f2;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.section-title_place_feynman {
+.feynman__title {
   margin: 0 0 70px 0;
   width: 648px;
   line-height: 1.15;
@@ -226,7 +231,7 @@
   position: relative;
 }
 
-.section-subtitle_place_feynman {
+.feynman-subtitle {
   margin: 0;
   line-height: 51px;
   font-size: 36px;
@@ -235,12 +240,14 @@
 }
 
 .feynman__link {
+  display: inline-block;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
   color: #2f80ed;
   position: absolute;
+  top: 445px;
   right: 48px;
 }
 
@@ -297,6 +304,8 @@
 .kaufman__triangle {
   width: 877px;
   height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
   position: absolute;
   top: 0;
   right: -210px;
@@ -306,6 +315,7 @@
 /* ФУТЕР */
 
 .footer {
+  min-height: 350px;
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #1f1f1f;
@@ -375,7 +385,7 @@
   text-decoration: underline;
 }
 
-.social-icon {
+.footer__social-icon {
   margin: 0 10px 0 0;
   width: 16px;
   height: 16px;
