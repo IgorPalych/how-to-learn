@@ -19,7 +19,6 @@
   display: flex;
   align-items: center;
   background-color: #f2f2f2;
-  margin-bottom: 100px;
   position: relative;
   overflow: hidden;
 }
@@ -92,7 +91,7 @@
 /* Контент → секция description */
 
 .description {
-  margin-bottom: 100px;
+  padding: 100px 0;
 }
 
 .two-columns {
